@@ -1,0 +1,13 @@
+.comprar{
+    /* background: #448457; */
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 45px;
+    margin-top: 5px;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}

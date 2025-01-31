@@ -1,0 +1,36 @@
+.cardapio {
+    text-align: center;
+    padding: 32px;
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+.cardapio h3 {
+    font-size: 32px;
+    font-family: 'Prata';
+    border-bottom: 4px solid;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.cardapio .pratos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.input-cor {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+@media (max-width: 500px){
+    .input-cor {
+        top: 3px;
+        right: 20px;
+    }
+        
+}

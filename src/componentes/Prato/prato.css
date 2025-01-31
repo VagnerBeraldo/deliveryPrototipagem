@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+.prato {
+    position: relative;
+    width: 280px;
+}
+
+.prato .cabecalho {
+    background-color:  #F0F0F0;
+    border-radius: 10px 10px 0px 0px;
+}
+.prato img {
+    width: 200px;
+    border-radius: 10%;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    bottom: -25px;
+}
+
+.prato .rodape {
+    
+    background: #FFFFFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.prato .rodape h4 {
+    color: #6278F7;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.prato .rodape h5 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #212121;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.deletar {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+.favoritar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.heart-icon{
+    color: #ff0000;
+}
+
+.shoppingBag{
+    color: #6278F7;
+}
+
+.contNum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background-color: #ff0000;
+    color: #FFFFFF;
+    position: absolute;
+    right: 15px;
+    top: -5px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
