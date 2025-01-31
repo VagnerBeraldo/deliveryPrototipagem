@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# 🛍️ PROJETO REACT: Página de restaurante delivery (Prototipagem)
+- Uma aplicação desenvolvida para estudar e explorar a biblioteca React.
+- Esta página foi criada com base no curso da Alura (React: desenvolvendo com javaScript e React: como os componentes funcionam), não é uma criação minha. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br><br>
 
-## Available Scripts
+## 📖 Descrição
+- O rect é One-way Data Binding, o fluxo de informação é passado do pai para o filho, sempre nesse sentido, o filho recebe as propriedades (props). Esse fluxo de informação / alteração facilita a manutenibilidade, pois inspecionando o código podemos identificar a origem da informação e rastreá-la.
+As alterações realizadas no front pelo usuário não são renderizadas pelo DOM real e sim pelo DOM virtual do react (em memória), assim, a cada mudança o react modifica seu DOM virtual, após comparar com o real, e somente depois rederiza no DOM real, deixando a aplicação mais performática.
 
-In the project directory, you can run:
+- Merece destaque, neste trabalho, a criação de componentes, uso de map e (Hook) useState.
 
-### `npm start`
+- Componentes: são trechos de código independente que podem ser reaproveitados, podem ter apenas um HTML, como no caso de um rodapé, ou podem conter funções que traram interatividade a página, deixando-a mais interessante.    
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- map: o método map(), com base em uma função fornecida ele percorre o array, gera um novo e diferente array, com base na instrução fornecida pela função, mantendo o array original intacto. Método muito utilizado para renderizar, por exemplo os times e seus colaboradores, permitindo a criação dinâmica de elementos.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- useState: grande responsável pela possibilidade de alterações no front. A cada mudança do estado ele promove um 'set' que será alterado no virtual DOM para depois renderizar o DOM real. Ele é utilizado para controlar o estado funcional dos componentes, a todo momento que a interface sofre uma modificação.  
 
-### `npm test`
+<br><br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📝 Fluxo da informação
+- O prato está contido dentro do cardápio e o cardápio inicial rederiza com o contido no app.js. Para estilo, cada componente possui seu arquivo de css próprio 
+<br><br>
 
-### `npm run build`
+## 🚀 Como abrir o projeto
+1. no prompt de cmd digite: `node -v` para retornar a versão, não retornando, instale o node 
+2. abrir o prompt de comando ou bash do github e navegar até a pasta do projeto
+3. digitar: `npm install` ou `npm i` (para instalar as dependências)
+4. digitar: `npm start` (para abrir o projeto)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br><br>
+## 💡 Modificações:
+O organograma (organo) se transformou em uma abstração de uma página de restaurante delivery.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. inclusão de menu responsivo e redes sociais
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. troca do banner 
 
-### `npm run eject`
+3. componentes: 
+	- BotaoComprar: 
+	(botão para simbolizar o carrinho). O botão também recebe o estilo de background dinâminco.
+	- Contador:
+	contador para simbolizar a quantidade de itens
+	- MensagemSucesso
+	após criar um cardápio ou prato uma mensagem indica o sucesso da solicitação
+	- RedeSocial
+	criado para reaproveitar os ícones do rodapé, no menu
+ 
+4. adaptação do rodapé
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. responsividade 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. refatoração
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br><br>
+## 👩‍💻 Desenvolvedor / Autor
+- Vagner Beraldo
+- Aluno do 2º semestre do curso de Desenvolvimento de Sistemas no SENAC - Santo Amaro.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br><br>
+## 🛠️ Tecnologias Utilizadas
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- React.js
+- Hooks: useState
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br><br>
+## 🛠️ IDE Utilizada
+- Visual Studio Code
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br><br>
+## 📝 Notas Adicionais
+Este projeto foi desenvolvido como parte de estudos pessoais, e qualquer feedback ou contribuição é bem-vindo.
 
-### Analyzing the Bundle Size
+<br><br>
+## Agradecimentos
+- [Alura](https://alura.com.br) 
+- [Caroline Sanches](https://www.canva.com/p/carolinesanches/) (designer do banner disponível no canva)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br><br>
+### link da página:
+## [Página_restaurante_delivery](https://delivery-prototipagem.vercel.app/)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
