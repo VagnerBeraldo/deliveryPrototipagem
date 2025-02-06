@@ -2,20 +2,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: #414F45;
     gap: 1rem;
-    height: 0px;
+    height: 45px;
 }
 
-
-.containerIcons.menu {
-    position: relative;
-    top: -25px;
-    margin-right: 3rem;
-}
-
-@media (max-width: 1024px) {
-    .containerIcons.menu {
-        margin-right: 1rem;
-    }
-        
+.iconesRedes a img:last-child{
+    margin-right: 2rem;
 }
