@@ -194,8 +194,8 @@ function App() {
 
   return (
     <div>
-      <Menu />
       <RedeSocial local="menu" />
+      <Menu />
       <Banner />
 
       <Formulario aoCriarCardapio={cadastrarCardapio} cardapios={cardapios.map(cardapio => cardapio.nome)} aoCadastrar={prato => setPratos([...pratos, prato])} />
