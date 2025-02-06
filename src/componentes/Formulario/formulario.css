@@ -19,3 +19,19 @@
     font-weight: 400;
     font-size: 32px;
 }
+
+@media (max-width: 1024px) {
+    .formulario-container {
+        margin: 80px 15px!important;
+    }
+
+    .formulario-container .formulario {
+        padding: 36px 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .formulario-container {
+        flex-direction: column;
+    }
+}
